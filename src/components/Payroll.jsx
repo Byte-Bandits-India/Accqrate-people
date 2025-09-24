@@ -40,9 +40,9 @@ export default function HRPayrollSection() {
           {/* Footer at bottom */}
           <div className="flex items-center gap-2 mt-auto pl-1">
             <img
-              src="/images/woman.png"
+              src="/images/man.png"
               alt="Head of HR"
-              className="w-10 h-10 rounded-full"
+              className="w-10 h-10 lg:h-[60px] lg:w-[60px] rounded-full"
             />
             <div className="text-left">
               <p className="text-sm font-semibold text-green-700">Head of HR</p>
@@ -62,7 +62,7 @@ export default function HRPayrollSection() {
             <img
               src="/images/woman.png"
               alt="Head of HR"
-              className="w-10 h-10 rounded-full"
+              className="w-10 h-10 lg:h-[60px] lg:w-[60px] rounded-full"
             />
             <div className="text-left">
               <p className="text-sm font-semibold text-green-700">Head of HR</p>
