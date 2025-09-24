@@ -79,7 +79,7 @@ export default function Hero() {
           className="mt-12 mx-auto mb-6"
         />
 
-       
+
       </section>
     );
   }
@@ -92,13 +92,13 @@ export default function Hero() {
     >
       <div className="w-full max-w-[1280px] mx-auto mt-[82px] md:mt-[90px] mb-[40px]">
         {/* Headings */}
-        <h1 className="tracking--5 text-fluid-h1 font-semibold text-[#333333] mb-[40px]">
+        <h1 className="tracking--5 text-fluid-h1 font-semibold text-[#333333] mb-[24px]">
           Accqrate <span className="text-[#43A047]">People</span>
         </h1>
         <div className=" max-w-[340px] md:max-w-[800px] mx-auto">
-          <h2 className="text-[20px] tracking--5 md:text-[24px] lg:text-[30px] font-medium text-[#333333] tracking-wide mb-[32px] md:mb-[40px]">
-          The Only  <span className="text-[#43A047] font-medium md:font-medium ">HR & Payroll Solution</span>{" "}
-           You'll Ever Need
+          <h2 className="text-[20px] tracking--5 md:text-[24px] lg:text-[30px] font-medium text-[#333333] tracking-wide mb-[24px]">
+            The Only  <span className="text-[#43A047] font-medium md:font-medium ">HR & Payroll Solution</span>{" "}
+            You'll Ever Need
           </h2>
           <p className="text-fluid-caption max-w-[250px] mx-auto sm:max-w-[900px] md:text-[18px] lg:text-[20px] tracking-tight md:font-semibold md:leading-10 mb-[16px] md:mb-[24px] text-[#333333]">
             Effortlessly Manage Your Workforce, Payroll, and Compliance
@@ -107,7 +107,11 @@ export default function Hero() {
 
           {/* Supporting text */}
           <p className="text-[#737373] text-fluid-small md:hidden">
-           Whether you're scaling, managing a growing team, or optimizing HR operations, Accqrate People is built to simplify every aspect of HR from recruitment to retirement on a single, secure platform.
+            Whether you're scaling, managing a growing team, or optimizing HR operations, Accqrate People is built to simplify every aspect of HR from recruitment to retirement on a single, secure platform.
+          </p>
+
+          <p className="text-[#737373] text-[20px] hidden md:block">
+            Whether you're scaling, managing a growing team, or optimizing HR operations, Accqrate People is built to simplify every aspect of HR from recruitment to retirement on a single, secure platform.
           </p>
         </div>
 
@@ -142,18 +146,18 @@ export default function Hero() {
 
 
       {/* Trusted text */}
-      <div className="mb-8 md:mb-[40px]">
-        <h3 className="text-[14px] md:text-[16px] lg:text-[20px]  font-semibold text-[#333333] text-center mx-auto">
-         Join over 5,000 global companies who trust Accqrate People to manage their workforce with ease. 
+      <div className="mb-8 w-full max-w-[1280px] mx-auto">
+        <h3 className="text-[14px] md:text-[16px] lg:text-[30px]  font-semibold text-[#333333] text-center mx-auto">
+          Join over 5,000 global companies who trust Accqrate People to manage their workforce with ease.
         </h3>
       </div>
-  
-  <div className="mb-[32px] md:mb-[40px] w-full max-w-[1128px] mx-auto rounded-xl overflow-hidden">
+
+      <div className="mb-[32px] md:mb-[40px] w-full max-w-[1128px] mx-auto rounded-xl overflow-hidden">
         <video autoPlay loop muted playsInline poster="/images/video-poster.jpg" className="w-full h-auto">
           <source src="/videos/Hero.mp4" type="video/mp4" />
         </video>
       </div>
-      
+
     </section>
   );
 }

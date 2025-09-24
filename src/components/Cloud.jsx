@@ -28,19 +28,19 @@ export default function Cloud() {
     { title: "Automated Payroll Setup", content: "Sample content for Automated Payroll Setup." },
     { title: "Custom Payroll Components", content: "Sample content for Custom Payroll Components." },
     { title: "Statutory & Loan Clearance", content: "Sample content for Statutory & Loan Clearance." },
-    ];
+  ];
 
   const expenseDropdowns = [
     { title: "Company Calendar & Leave Balances", content: "Sample content for Company Calendar & Leave Balances." },
     { title: "Leave Request Automation", content: "Sample content for Leave Request Automation." },
     { title: "Comprehensive Leave Reporting", content: "Sample content for Comprehensive Leave Reporting." },
-     ];
+  ];
 
   const financialDropdowns = [
     { title: "Termination Checklists", content: "Sample content for Termination Checklists." },
     { title: "Complete Data & Asset Retrieval", content: "Sample content for Complete Data & Asset Retrieval." },
     { title: "Exit interviews & Documentation", content: "Sample content for Exit interviews & Documentation." },
-     ];
+  ];
 
   // --- Skeleton ---
   if (loading || !isVisible) {
@@ -60,12 +60,12 @@ export default function Cloud() {
     <section className="mx-auto font-inter">
       <div className="mt-[32px]">
         {/* Top Feature Cards */}
-         <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center  md:mb-[32px]">
+        <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
           <span className="text-[#43A047]"> Cloud or On-Premises?</span> The Choice is Yours
         </h2>
-        <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center py-[12px]">Fast, Flexible, and Secure Deployment Options</p>
-        <p className="text-center px-[24px] text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6 md:pb-[32px]">
-With Accqrate People, you’re in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible </p>
+        <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center mb-6">Fast, Flexible, and Secure Deployment Options</p>
+        <p className="text-center px-[24px] text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6">
+          With Accqrate People, you’re in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible </p>
 
         <div className="max-w-[1000px] mx-auto px-[24px] md:px-[32px] rounded-[40px] mb-[48px] md:mb-[56px]">
           <Accordion
@@ -94,11 +94,11 @@ With Accqrate People, you’re in control. Whether you choose to deploy in the c
         </div>
 
         {/* Bottom Sections */}
-        <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center  md:mb-[32px]">
-        Manage Every <span className="text-[#43A047]">Employee Lifecycle</span> in One Platform
+        <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
+          Manage Every <span className="text-[#43A047]">Employee Lifecycle</span> in One Platform
         </h2>
-        <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center py-[12px]">Streamlined HR, Payroll and Compliance</p>
-        <div className=" py-6 md:py-[32px]">
+        <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center">Streamlined HR, Payroll and Compliance</p>
+        <div className="">
           <div className="px-6 md:px-[32px] max-w-[1280px] mx-auto">
             {/* ================= Account Receivables ================= */}
             <SectionWithAccordion
@@ -110,7 +110,7 @@ With Accqrate People, you’re in control. Whether you choose to deploy in the c
             {/* ================= Account Payables ================= */}
             <SectionWithAccordion
               title="Effortless Payroll & Compliance"
-             items={payableDropdowns}
+              items={payableDropdowns}
               video="videos/Accounts_payables.mp4"
             />
 
@@ -133,7 +133,7 @@ With Accqrate People, you’re in control. Whether you choose to deploy in the c
           className="bg-white"
         />
       </div>
-     
+
     </section>
   );
 }
@@ -142,15 +142,15 @@ With Accqrate People, you’re in control. Whether you choose to deploy in the c
 function SectionWithAccordion({ title, items, video, className }) {
   return (
     <>
-      <div className="my-6 md:my-[32px]">
-        <section className={`${className ? className : ""} py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl md:pb-10 lg:pb-20 mx-auto md:flex md:px-[32px] lg:px-10`}>
+      <div>
+        <section className={`${className ? className : ""} py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex`}>
           {/* Left Side */}
           <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
-            <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking--5 leading-tight pb-6 md:pb-[32px] tracking-[-2%] ">
+            <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking--5 leading-tight pb-6 tracking-[-2%] ">
               {title}{" "}
-             
+
             </h2>
-           
+
 
             {/* Accordion */}
             <div className="md:mt-6 lg:mt-10">
