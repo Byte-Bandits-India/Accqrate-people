@@ -147,7 +147,7 @@ export default function Transform() {
     <>
       <div className="px-[24px] md:px-[32px] max-w-[1280px] mx-auto font-inter">
         {/* Heading */}
-        <h2 className="max-w-[340px] mx-auto sm:max-w-[800px] text-[24px] md:text-[32px] lg:text-[36px] font-inter text-[#000000] text-center mb-6">
+        <h2 className="max-w-[340px] mx-auto sm:max-w-[800px] text-[24px] md:text-[32px] lg:text-[38px] font-inter text-[#000000] text-center mb-6">
           Transform Your <span className="text-[#43A047]">HR and Payroll</span> Today
         </h2>
 
@@ -179,7 +179,7 @@ export default function Transform() {
         </div>
 
         {/* Heading */}
-        <h2 className="text-[24px] md:text-fluid-h2 font-medium tracking--5 text-center mb-6">
+        <h2 className="text-[24px] md:text-fluid-h2 lg:text-[38px] font-medium tracking--5 text-center mb-6">
           Integrated <span className="text-[#43A047]">HR Finances</span>
         </h2>
         <p className="text-center text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6 md:pb-[32px]">
@@ -214,7 +214,7 @@ export default function Transform() {
 
         <div className="bg-[#F5F5F5] rounded-lg py-6 md:py-8 mt-[48px] w-full">
           <div className="px-6 md:px-8">
-            <h2 className="text-[24px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-4 md:mb-[32px]">
+            <h2 className="text-[24px] leading-tight tracking--5 md:text-fluid-h2 font-medium lg:text-[38px] text-center mb-4 md:mb-[32px]">
               Integrated DMS<span className="text-[#43A047]"> {" "}(Document Management System)</span>
             </h2>
             <p className="text-center text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6 md:pb-[32px]">
@@ -251,7 +251,7 @@ export default function Transform() {
         </div>
       </div>
       {/* Logo Marquee */}
-      <h1 className="text-[24px] max-w-[340px] md:max-w-full leading-tight mx-auto mt-[48px] tracking--5 md:text-fluid-h2 font-semibold text-center mb-4 px-[24px]">
+      <h1 className="text-[24px] max-w-[340px] md:max-w-full leading-tight mx-auto mt-[48px] tracking--5 md:text-fluid-h2 lg:text-[38px] font-semibold text-center mb-4 px-[24px]">
         Trusted by <span className="text-[#43A047] md:whitespace-nowrap">Global Leaders</span> Across Industries
       </h1>
 

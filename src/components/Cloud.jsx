@@ -54,10 +54,10 @@ export default function Cloud() {
       <section className="mx-auto font-inter max-w-[1280px]">
         <div className="mt-[32px]">
           {/* Top Feature Cards */}
-          <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
+          <h2 className="text-[24px] max-w-[340px] lg:text-[38px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
             <span className="text-[#43A047]"> Cloud or On-Premises?</span> The Choice is Yours
           </h2>
-          <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center mb-6">
+          <p className="text-fluid-h3 font-semibold text-bold px-[24px] mx-auto text-center mb-6">
             Fast, Flexible, and Secure Deployment Options
           </p>
           <p className="text-center px-[24px] text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6">
@@ -82,10 +82,10 @@ export default function Cloud() {
           </div>
 
           {/* Bottom Sections */}
-          <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
+          <h2 className="text-[24px] max-w-[340px] sm:max-w-[1280px] lg:text-[38px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
             Manage Every <span className="text-[#43A047]">Employee Lifecycle</span> in One Platform
           </h2>
-          <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center">
+          <p className="text-fluid-caption text-bold px-[24px] lg:text-[20px] mx-auto text-center">
             Streamlined HR, Payroll and Compliance
           </p>
 

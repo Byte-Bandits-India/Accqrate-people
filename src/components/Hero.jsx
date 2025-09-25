@@ -96,12 +96,12 @@ export default function Hero() {
           Accqrate <span className="text-[#43A047]">People</span>
         </h1>
         <div className=" max-w-[340px] md:max-w-[800px] mx-auto">
-          <h2 className="text-[20px] tracking--5 md:text-[24px] lg:text-[30px] font-medium text-[#333333] tracking-wide mb-[24px]">
+          <h2 className="text-[20px] tracking--5 md:text-[24px] lg:text-[38px] font-light text-[#333333] tracking-wide mb-[24px]">
             The Only  <span className="text-[#43A047] font-medium md:font-medium ">HR & Payroll Solution</span>{" "}
             You'll Ever Need
           </h2>
-          <p className="text-fluid-caption max-w-[250px] mx-auto sm:max-w-[900px] md:text-[18px] lg:text-[20px] tracking-tight md:font-semibold md:leading-10 mb-[16px] md:mb-[24px] text-[#333333]">
-            Effortlessly Manage Your Workforce, Payroll, and Compliance
+          <p className="text-fluid-caption max-w-[250px] mx-auto sm:max-w-[900px] md:text-[18px] lg:text-[26px] tracking-tight md:font-semibold md:leading-10 mb-[16px] md:mb-[24px] text-[#333333]">
+            Effortlessly Manage Your Workforce, Payroll,<br className="hidden md:block" /> and Compliance
           </p>
 
 

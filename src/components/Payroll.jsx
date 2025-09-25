@@ -95,7 +95,7 @@ export default function HRPayrollSection() {
                   <AccordionTrigger className="text-fluid-body font-light text-gray-800 lg:text-[26px] leading-8 md:mt-6">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-fluid-caption text-gray-600">
+                  <AccordionContent className="text-fluid-caption lg:text-[22px] font-light text-gray-600">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -114,10 +114,10 @@ export default function HRPayrollSection() {
           <p className="text-gray-700 text-fluid-h2 tracking--5 text-center font-semibold mb-6 md:hidden">
             Today with Accqrate People
           </p>
-          <h3 className="text-[#333333] text-center font-medium tracking--5 text-fluid-h2 hidden md:block">
+          <h3 className="text-[#333333] text-center font-medium tracking--5 lg:text-[38px] text-fluid-h2 hidden md:block">
             Transform Your HR & Payroll Today with Accqrate People
           </h3>
-          <p className="text-gray-600 text-fluid-caption mb-8 text-center">
+          <p className="text-gray-600 text-fluid-caption lg:text-[20px] mb-8 text-center">
             Your HR and payroll systems should work for you, not the other way
             around. <br className="hidden md:block" /> Discover the seamless, intuitive solution trusted by businesses
             worldwide.
