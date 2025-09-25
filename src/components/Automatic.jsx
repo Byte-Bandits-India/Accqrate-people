@@ -153,20 +153,32 @@ export default function AutomationSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
             {/* Image */}
             <div className="flex items-center justify-center">
-              <img src="/images/hiring.png" alt="Why Choose Accqrate Books" className="w-[320px] sm:w-[360px] md:w-[420px] lg:w-[480px] h-auto" />
+              <img src="/images/hiring.png" alt="Why Choose Accqrate Books" className="w-[320px] sm:w-[360px] md:w-[420px] lg:w-[650px] h-auto" />
             </div>
             {/* Text List */}
-            <ul className="text-left px-[24px] list-disc list-inside text-[14px] leading-6 sm:text-[15px] md:text-[16px] lg:text-[18px] space-y-4 md:space-y-6">
-              <li> Stay Ahead of ZATCA Compliance by Design: Never worry about last-minute regulations or audits. </li>
-              <li> Modern Cloud Accounting: Access your accounting software anywhere. Simplify financial management for every team member. </li>
-              <li> Device and Vendor Freedom: Use any device, integrate any bank, no hardware lock-in. </li>
-              <li> Future-Proof Scaling: Move from startup to multi-entity enterprise—no reimplementation, no data loss. </li>
-              <li> Total Business Control: Real-time insights, automation, and bulletproof security. </li>
-              <li> Flexible price: Flexible plans for every business, from startups to enterprises. Your data stays secure on our Saudi e-invoicing platform with cloud accounting software benefits. </li>
+            <ul className="text-left px-[24px] list-disc list-inside text-[14px] leading-6 sm:text-[15px] md:text-[16px] lg:text-[18px] space-y-4 md:space-y-8">
+              <li> Automation-First: Streamline your processes from hiring to payroll to performance reviews. </li>
+              <li> Real-Time Reporting & Dashboards: Instant access to key metrics, analytics, and compliance reports. </li>
+              <li> Compliance Without Worry: Always stay ahead of changing regulations with built-in compliance tools. </li>
+              <li> Secure and Scalable: Whether on the cloud or on-premises, your HR data is secure and ready to scale as your business grows. </li>
             </ul>
           </div>
+          {/* Buttons */}
+          <div className="hidden md:block mt-[32px]">
+            <div className="flex flex-col md:flex-row gap-3 px-8 w-full max-w-[1280px] mx-auto md:justify-center">
+              <button className="bg-[#4CAF50] text-white py-3 px-4 rounded-md w-full md:w-[305px] md:h-[58px]">
+                REQUEST A DEMO
+              </button>
+              <button className="bg-[#4CAF50] text-white py-3 px-4 rounded-md w-full md:w-[305px] md:h-[58px]">
+                CONTACT SALES
+              </button>
+              <button className="bg-[#4CAF50] text-white py-3 px-4 rounded-md w-full md:w-[305px] md:h-[58px]">
+                LEARN MORE
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </div >
     </>
   );
 }
