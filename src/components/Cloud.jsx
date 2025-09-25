@@ -50,77 +50,79 @@ export default function Cloud() {
   }
 
   return (
-    <section className="mx-auto font-inter max-w-[1280px]">
-      <div className="mt-[32px]">
-        {/* Top Feature Cards */}
-        <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
-          <span className="text-[#43A047]"> Cloud or On-Premises?</span> The Choice is Yours
-        </h2>
-        <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center mb-6">
-          Fast, Flexible, and Secure Deployment Options
-        </p>
-        <p className="text-center px-[24px] text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6">
-          With Accqrate People, you’re in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible
-        </p>
+    <>
+      <section className="mx-auto font-inter max-w-[1280px]">
+        <div className="mt-[32px]">
+          {/* Top Feature Cards */}
+          <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
+            <span className="text-[#43A047]"> Cloud or On-Premises?</span> The Choice is Yours
+          </h2>
+          <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center mb-6">
+            Fast, Flexible, and Secure Deployment Options
+          </p>
+          <p className="text-center px-[24px] text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6">
+            With Accqrate People, you’re in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible
+          </p>
 
-        <div className="max-w-[1000px] mx-auto px-[24px] md:px-[32px] rounded-[40px] mb-[48px] md:mb-[56px]">
-          <Accordion type="single" collapsible className="flex flex-col md:flex-row gap-4 w-[100%] mx-auto">
-            <AccordionCard
-              value="card-4"
-              icon="/images/instant.png"
-              title="Cloud Deployment"
-              content={<>This is where extra details about cloud deployment go.</>}
-            />
-            <AccordionCard
-              value="card-5"
-              icon="/images/invoice.png"
-              title="On-Premises"
-              content={<>Extra details about on-premises deployment will be shown here.</>}
-            />
-          </Accordion>
-        </div>
-
-        {/* Bottom Sections */}
-        <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
-          Manage Every <span className="text-[#43A047]">Employee Lifecycle</span> in One Platform
-        </h2>
-        <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center">
-          Streamlined HR, Payroll and Compliance
-        </p>
-
-        {/* ================= Account Receivables ================= */}
-        <section className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
-          <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
-            <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking--5 leading-tight pb-6 tracking-[-2%]">
-              Simplify Recruitment and Onboarding
-            </h2>
-            <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">
-              {receivableDropdowns.map((item, idx) => (
-                <AccordionItem key={idx} value={`receivable-${idx}`}>
-                  <AccordionTrigger className="text-[16px] md:text-[14px] lg:text-[16px] font-medium text-left">
-                    {item.title}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-[12px] md:text-[12px] lg:text-[14px]">
-                    {item.content}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
+          <div className="max-w-[1000px] mx-auto px-[24px] md:px-[32px] rounded-[40px] mb-[48px] md:mb-[56px]">
+            <Accordion type="single" collapsible className="flex flex-col md:flex-row gap-4 w-[100%] mx-auto">
+              <AccordionCard
+                value="card-4"
+                icon="/images/instant.png"
+                title="Cloud Deployment"
+                content={<>This is where extra details about cloud deployment go.</>}
+              />
+              <AccordionCard
+                value="card-5"
+                icon="/images/invoice.png"
+                title="On-Premises"
+                content={<>Extra details about on-premises deployment will be shown here.</>}
+              />
             </Accordion>
           </div>
-          <div className="flex-1 mt-6 lg:mt-0 flex justify-center items-center">
-            <video
-              className="rounded-lg w-full max-w-[500px] md:h-[300px] lg:h-auto xl:h-[420px] object-contain"
-              autoPlay
-              muted
-              loop
-            >
-              <source src="videos/account-receivables.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </section>
 
-        <div className="bg-[#F2FFF3]">
+          {/* Bottom Sections */}
+          <h2 className="text-[24px] max-w-[340px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-6">
+            Manage Every <span className="text-[#43A047]">Employee Lifecycle</span> in One Platform
+          </h2>
+          <p className="text-fluid-caption text-bold px-[24px] mx-auto text-center">
+            Streamlined HR, Payroll and Compliance
+          </p>
 
+          {/* ================= Account Receivables ================= */}
+          <section className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
+            <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
+              <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking--5 leading-tight pb-6 tracking-[-2%]">
+                Simplify Recruitment and Onboarding
+              </h2>
+              <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">
+                {receivableDropdowns.map((item, idx) => (
+                  <AccordionItem key={idx} value={`receivable-${idx}`}>
+                    <AccordionTrigger className="text-[16px] md:text-[14px] lg:text-[16px] font-medium text-left">
+                      {item.title}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-[12px] md:text-[12px] lg:text-[14px]">
+                      {item.content}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+            <div className="flex-1 mt-6 lg:mt-0 flex justify-center items-center">
+              <video
+                className="rounded-lg w-full max-w-[500px] md:h-[300px] lg:h-auto xl:h-[420px] object-contain"
+                autoPlay
+                muted
+                loop
+              >
+                <source src="videos/account-receivables.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section className="md:bg-[#F2FFF3]">
+        <div className="max-w-[1280px] mx-auto">
           {/* ================= Account Payables ================= */}
           <section className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
             <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
@@ -152,18 +154,51 @@ export default function Cloud() {
             </div>
           </section>
 
-          {/* ================= Smart Expense Management ================= */}
-          <section className="my-6 mx-6 md:m-[32px]">
-            <div className="rounded-xl md:rounded-2xl mx-auto md:flex bg-white py-6 px-6 md:p-[32px]"
-              style={{ boxShadow: '9px 7px 16.9px rgba(67, 160, 71, 0.2)' }}
-            >
+          <div className="bg-[#F2FFF3] py-6 md:py-0">
+            {/* ================= Smart Expense Management ================= */}
+            <section className="my-6 mx-6 md:m-[32px]">
+              <div
+                className="rounded-xl md:rounded-2xl mx-auto md:flex md:bg-white md:p-[32px] md:shadow-[9px_7px_16.9px_rgba(67,160,71,0.2)]"
+              >
+                <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
+                  <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking--5 leading-tight pb-6 tracking-[-2%]">
+                    Track Absences and Manage Leave with Ease
+                  </h2>
+                  <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">
+                    {expenseDropdowns.map((item, idx) => (
+                      <AccordionItem key={idx} value={`expense-${idx}`}>
+                        <AccordionTrigger className="text-[16px] md:text-[14px] lg:text-[16px] font-medium text-left">
+                          {item.title}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-[12px] md:text-[12px] lg:text-[14px]">
+                          {item.content}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
+                <div className="flex-1 mt-6 lg:mt-0 flex justify-center items-center">
+                  <video
+                    className="rounded-lg w-full max-w-[500px] md:h-[300px] lg:h-auto xl:h-[420px] object-contain"
+                    autoPlay
+                    muted
+                    loop
+                  >
+                    <source src="videos/Smart_expense_management.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </section>
+
+            {/* ================= Financial Statements ================= */}
+            <section className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
               <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
                 <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking--5 leading-tight pb-6 tracking-[-2%]">
-                  Track Absences and Manage Leave with Ease
+                  Termination and Offboarding Made Simple
                 </h2>
                 <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">
-                  {expenseDropdowns.map((item, idx) => (
-                    <AccordionItem key={idx} value={`expense-${idx}`}>
+                  {financialDropdowns.map((item, idx) => (
+                    <AccordionItem key={idx} value={`financial-${idx}`}>
                       <AccordionTrigger className="text-[16px] md:text-[14px] lg:text-[16px] font-medium text-left">
                         {item.title}
                       </AccordionTrigger>
@@ -181,44 +216,13 @@ export default function Cloud() {
                   muted
                   loop
                 >
-                  <source src="videos/Smart_expense_management.mp4" type="video/mp4" />
+                  <source src="videos/Financial_statements.mp4" type="video/mp4" />
                 </video>
               </div>
-            </div>
-          </section>
-
-          {/* ================= Financial Statements ================= */}
-          <section className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
-            <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
-              <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking--5 leading-tight pb-6 tracking-[-2%]">
-                Termination and Offboarding Made Simple
-              </h2>
-              <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">
-                {financialDropdowns.map((item, idx) => (
-                  <AccordionItem key={idx} value={`financial-${idx}`}>
-                    <AccordionTrigger className="text-[16px] md:text-[14px] lg:text-[16px] font-medium text-left">
-                      {item.title}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-[12px] md:text-[12px] lg:text-[14px]">
-                      {item.content}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-            <div className="flex-1 mt-6 lg:mt-0 flex justify-center items-center">
-              <video
-                className="rounded-lg w-full max-w-[500px] md:h-[300px] lg:h-auto xl:h-[420px] object-contain"
-                autoPlay
-                muted
-                loop
-              >
-                <source src="videos/Financial_statements.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

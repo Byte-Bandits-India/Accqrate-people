@@ -109,7 +109,7 @@ export default function AutomationSection() {
             {sections.map((section, sIdx) => (
               <div
                 key={sIdx}
-                className="bg-white p-6 flex flex-col rounded-[20px]"
+                className="bg-white md:p-6 flex flex-col rounded-[20px]"
               >
                 <h2 className="text-[#43A047] tracking--5 text-[20px] md:text-[24px] lg:text-[26px] font-medium leading-snug mb-6">
                   {section.title}
