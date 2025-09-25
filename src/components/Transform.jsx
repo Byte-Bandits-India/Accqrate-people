@@ -198,7 +198,7 @@ export default function Transform() {
             icon="/images/instant.png"
             title="Payroll Finances"
             content={
-              <>Extra details about <b>Payroll Finances</b> will appear here when expanded 1.</>
+              <>Automatic postings to GL and controlling with real-time monitoring</>
             }
           />
 
@@ -207,49 +207,55 @@ export default function Transform() {
             icon="/images/invoice.png"
             title="Payroll Clearances"
             content={
-              <>Extra details about <b>Payroll Clearances</b> will be shown here 2.</>
+              <>Automatic payroll clearances of accrued salaries and statutory expenses in one-click</>
             }
           />
-
-
         </Accordion>
 
-        <h2 className="text-[24px] mt-[48px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-4 md:mb-[32px]">
-          Integrated DMS<span className="text-[#43A047]"> {" "}(Document Management System)</span>
-        </h2>
-        <p className="text-center text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6 md:pb-[32px]">
-          Accqrate People helps to maintain all your employee records up-to-date and intact through the inbuilt DMS. All employee related documents can easily be stored and retrieved in a single click. Thanks to the keyword searches that enables you to effortlessly track the dossier of your employees. </p>
-        {/* Accordion Section */}
-        <Accordion
-          type="single"
-          collapsible
-          className="flex flex-col gap-4
+        <div className="bg-[#F5F5F5] rounded-lg py-6 md:py-8 mt-[48px] w-full">
+          <div className="px-6 md:px-8">
+            <h2 className="text-[24px] leading-tight tracking--5 md:text-fluid-h2 font-medium text-center mb-4 md:mb-[32px]">
+              Integrated DMS<span className="text-[#43A047]"> {" "}(Document Management System)</span>
+            </h2>
+            <p className="text-center text-gray-700 tracking--2 text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6 md:pb-[32px]">
+              Accqrate People helps to maintain all your employee records up-to-date and intact through the inbuilt DMS. All employee related documents can easily be stored and retrieved in a single click. Thanks to the keyword searches that enables you to effortlessly track the dossier of your employees. </p>
+            {/* Accordion Section */}
+            <Accordion
+              type="single"
+              collapsible
+              className="flex flex-col gap-4
         sm:grid sm:grid-cols-2 md:gap-6
         md:grid md:grid-cols-2 md:max-w-5xl md:mb-[32px] mx-auto"
-        >
-          <AccordionCard
-            value="card-1"
-            icon="/images/instant.png"
-            title="Storage and archiving"
-            content={
-              <>Extra details about <b>Storage and archiving</b> will appear here when expanded 1.</>
-            }
-          />
+            >
+              <AccordionCard
+                value="card-1"
+                icon="/images/instant.png"
+                title="Storage and archiving"
+                content={
+                  <>Extra details about <b>Storage and archiving</b> will appear here when expanded 1.</>
+                }
+              />
 
-          <AccordionCard
-            value="card-2"
-            icon="/images/invoice.png"
-            title="Flexible retrieval options"
-            content={
-              <>Extra details about <b>Flexible retrieval options</b> will be shown here 2.</>
-            }
-          />
+              <AccordionCard
+                value="card-2"
+                icon="/images/invoice.png"
+                title="Flexible retrieval options"
+                content={
+                  <>Extra details about <b>Flexible retrieval options</b> will be shown here 2.</>
+                }
+              />
 
 
-        </Accordion>
+            </Accordion>
+          </div>
+        </div>
       </div>
       {/* Logo Marquee */}
-      <h1 className="text-[24px] max-w-[340px] leading-tight mx-auto mt-[48px] tracking--5 md:text-fluid-h2 font-semibold text-center mb-4 px-[24px]">Trusted by <span className="text-[#43A047]">Global Leaders</span> Across Industries</h1>
+      <h1 className="text-[24px] max-w-[340px] md:max-w-full leading-tight mx-auto mt-[48px] tracking--5 md:text-fluid-h2 font-semibold text-center mb-4 px-[24px]">
+        Trusted by <span className="text-[#43A047] md:whitespace-nowrap">Global Leaders</span> Across Industries
+      </h1>
+
+
       <p className="text-center text-gray-700 text-[14px] md:text-fluid-body max-w-5xl mx-auto px-[24px] pb-[32px]">Accqrate People empowers companies in retail, manufacturing, hospitality, healthcare, and more to stay ahead of their HR & Payroll needs.</p>
       <div className="w-screen  relative mb-[48px] md:mb-[56px]">
         <div className="max-w-5xl overflow-hidden py-6 mx-auto">
