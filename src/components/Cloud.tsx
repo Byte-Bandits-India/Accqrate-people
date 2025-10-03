@@ -2,14 +2,13 @@
 
 import React, { useContext, useRef } from "react";
 import { LoadingContext } from "../utils/LoadingContext";
-import Skeleton from "./skeleton";
+import { Skeleton } from "./ui/skeleton";
 import useInView from "../utils/useInView";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-  // If AccordionCard is custom in your project, keep it. Otherwise remove it.
   AccordionCard,
 } from "../components/ui/accordion";
 
@@ -52,9 +51,104 @@ export default function Cloud() {
   // Show skeleton while loading or not in view
   if (loading || !isVisible) {
     return (
-      <section ref={receivableRef} className="space-y-6 my-6 max-w-[1440px] mx-auto">
-        <Skeleton className="h-[200px] w-full rounded-xl" />
-        <Skeleton className="h-[200px] w-full rounded-xl" />
+      <section ref={receivableRef} className="mx-auto font-inter max-w-[1280px] space-y-12 my-6">
+        {/* Main Heading Skeleton */}
+        <div className="space-y-4 mt-8">
+          <Skeleton className="h-8 md:h-10 lg:h-12 w-3/4 mx-auto" />
+          <Skeleton className="h-6 md:h-7 w-2/3 mx-auto" />
+          <Skeleton className="h-4 w-5/6 mx-auto" />
+        </div>
+
+        {/* Cloud/On-Premises Cards Skeleton */}
+        <div className="max-w-[1000px] mx-auto px-6">
+          <div className="flex flex-col md:flex-row gap-4 w-full">
+            {[1, 2].map((item) => (
+              <div key={item} className="flex-1 space-y-4 p-6 border rounded-[40px]">
+                <Skeleton className="h-6 w-3/4 mx-auto" />
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-5/6" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom Heading Skeleton */}
+        <div className="space-y-4">
+          <Skeleton className="h-8 md:h-10 lg:h-12 w-4/5 mx-auto" />
+          <Skeleton className="h-6 w-1/3 mx-auto" />
+        </div>
+
+        {/* Recruitment Section Skeleton */}
+        <section className="py-6 px-6 rounded-xl md:flex gap-8">
+          <div className="flex-1 space-y-6">
+            <Skeleton className="h-8 md:h-10 lg:h-12 w-3/4" />
+            <div className="space-y-4">
+              {[1, 2, 3].map((item) => (
+                <div key={item} className="space-y-2 border rounded-lg p-4">
+                  <Skeleton className="h-5 w-2/3" />
+                  <Skeleton className="h-4 w-full" />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex-1 mt-6 md:mt-0">
+            <Skeleton className="w-full h-64 md:h-80 lg:h-96 rounded-lg" />
+          </div>
+        </section>
+
+        {/* Payroll Section Skeleton */}
+        <section className="py-6 px-6 rounded-xl md:flex gap-8">
+          <div className="flex-1 space-y-6">
+            <Skeleton className="h-8 md:h-10 lg:h-12 w-3/4" />
+            <div className="space-y-4">
+              {[1, 2, 3].map((item) => (
+                <div key={item} className="space-y-2 border rounded-lg p-4">
+                  <Skeleton className="h-5 w-2/3" />
+                  <Skeleton className="h-4 w-full" />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex-1 mt-6 md:mt-0">
+            <Skeleton className="w-full h-64 md:h-80 lg:h-96 rounded-lg" />
+          </div>
+        </section>
+
+        {/* Leave Management Section Skeleton */}
+        <section className="py-6 px-6 rounded-xl md:flex gap-8 bg-gray-50">
+          <div className="flex-1 space-y-6">
+            <Skeleton className="h-8 md:h-10 lg:h-12 w-3/4" />
+            <div className="space-y-4">
+              {[1, 2, 3].map((item) => (
+                <div key={item} className="space-y-2 border rounded-lg p-4 bg-white">
+                  <Skeleton className="h-5 w-2/3" />
+                  <Skeleton className="h-4 w-full" />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex-1 mt-6 md:mt-0">
+            <Skeleton className="w-full h-64 md:h-80 lg:h-96 rounded-lg" />
+          </div>
+        </section>
+
+        {/* Termination Section Skeleton */}
+        <section className="py-6 px-6 rounded-xl md:flex gap-8">
+          <div className="flex-1 space-y-6">
+            <Skeleton className="h-8 md:h-10 lg:h-12 w-3/4" />
+            <div className="space-y-4">
+              {[1, 2, 3].map((item) => (
+                <div key={item} className="space-y-2 border rounded-lg p-4">
+                  <Skeleton className="h-5 w-2/3" />
+                  <Skeleton className="h-4 w-full" />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex-1 mt-6 md:mt-0">
+            <Skeleton className="w-full h-64 md:h-80 lg:h-96 rounded-lg" />
+          </div>
+        </section>
       </section>
     );
   }
@@ -71,7 +165,7 @@ export default function Cloud() {
             Fast, Flexible, and Secure Deployment Options
           </p>
           <p className="text-center px-[24px] text-gray-700 tracking-[-0.02em] text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6">
-            With Accqrate People, you’re in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible
+            With Accqrate People, you're in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible
           </p>
 
           <div className="max-w-[1000px] mx-auto px-[24px] md:px-[32px] rounded-[40px] mb-[48px] md:mb-[56px]">

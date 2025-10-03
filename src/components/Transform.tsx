@@ -3,7 +3,7 @@
 import React, { useContext, useRef } from "react";
 import type { JSX } from "react";
 import { LoadingContext } from "../utils/LoadingContext";
-import Skeleton from "./skeleton";
+import Skeleton from "./ui/skeleton";
 import useInView from "../utils/useInView";
 import {
   Accordion,
@@ -144,13 +144,14 @@ export default function Transform(): JSX.Element {
             <div className="flex animate-scrollLeft w-max flex-shrink-0">
               {[...topRow, ...topRow].map((logo, i) => (
                 <div key={`top-${i}`} className="flex flex-col items-center mx-4">
-                  <Image
-                    src={logo.src}
-                    alt={logo.name}
-                    width={135}
-                    height={48}
-                    className="h-14 md:h-16 md:w-60 grayscale opacity-90 transition hover:grayscale-0 hover:opacity-100"
-                  />
+                  <div className="relative w-[135px] h-[48px] md:w-[240px] md:h-[64px]">
+                    <Image
+                      src={logo.src}
+                      alt={logo.name}
+                      fill
+                      className="object-contain grayscale opacity-90 transition hover:grayscale-0 hover:opacity-100"
+                    />
+                  </div>
                   <p className="mt-2 text-xs md:text-sm text-gray-700 font-medium">
                     {logo.name}
                   </p>
@@ -163,13 +164,14 @@ export default function Transform(): JSX.Element {
                   key={`bottom-${i}`}
                   className="flex flex-col items-center mx-4"
                 >
-                  <Image
-                    src={logo.src}
-                    alt={logo.name}
-                    width={135}
-                    height={48}
-                    className="h-14 md:h-16 md:w-60 grayscale opacity-90 transition hover:grayscale-0 hover:opacity-100"
-                  />
+                  <div className="relative w-[135px] h-[48px] md:w-[240px] md:h-[64px]">
+                    <Image
+                      src={logo.src}
+                      alt={logo.name}
+                      fill
+                      className="object-contain grayscale opacity-90 transition hover:grayscale-0 hover:opacity-100"
+                    />
+                  </div>
                   <p className="mt-2 text-xs md:text-sm text-gray-700 font-medium">
                     {logo.name}
                   </p>

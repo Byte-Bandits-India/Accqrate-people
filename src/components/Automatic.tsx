@@ -2,14 +2,14 @@
 
 import { useContext, useRef } from "react";
 import { LoadingContext } from "../utils/LoadingContext";
-import Skeleton from "./skeleton";
+import Skeleton from "./ui/skeleton";
 import useInView from "../utils/useInView";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "./ui/accordion";
+} from "../components/ui/accordion";
 
 // Section + item types
 type SectionItem = {

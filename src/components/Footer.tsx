@@ -2,8 +2,7 @@
 
 import React, { useContext, useState, useEffect, JSX } from "react";
 import { LoadingContext } from "../utils/LoadingContext";
-import Skeleton from "../components/skeleton";
-
+import Skeleton from "../components/ui/skeleton";
 
 interface Section {
   title: string;
@@ -85,23 +84,34 @@ export default function Footer(): JSX.Element {
 
   if (loading || !isVisible) {
     return (
-      <footer id="footerSection" className="bg-white border-t border-gray-200 font-inter min-h-full mt-[5%]">
+      <footer id="footerSection" className="bg-white border-t border-gray-200 font-inter mt-[5%]">
+        {/* Sections Skeleton */}
         <div className="flex justify-between flex-nowrap max-w-[1400px] mx-auto px-4 py-10 text-black gap-8 overflow-x-auto">
           {[...Array(6)].map((_, idx) => (
-            <div key={idx}>
-              <Skeleton height="24px" width="60%" className="mb-4" />
-              {[...Array(6)].map((_, i) => (
-                <Skeleton key={i} height="18px" width="80%" className="mb-2" />
-              ))}
+            <div key={idx} className="min-w-[180px]">
+              <Skeleton className="h-6 w-32 mb-4" />
+              <div className="space-y-3">
+                {[...Array(idx === 3 ? 6 : idx === 5 ? 4 : 7)].map((_, i) => (
+                  <Skeleton key={i} className="h-4 w-28" />
+                ))}
+              </div>
             </div>
           ))}
         </div>
-        <div className="flex flex-wrap justify-center gap-3 mt-5 mx-auto">
+
+        {/* Social Links Skeleton */}
+        <div className="flex flex-wrap justify-center gap-4 my-6">
           {[...Array(8)].map((_, i) => (
-            <Skeleton key={i} height="20px" width="20px" className="ml-2" />
+            <Skeleton key={i} className="w-6 h-6 rounded-full" />
           ))}
         </div>
-        <Skeleton height="20px" width="40%" className="mx-auto mt-6 text-center" />
+
+        {/* Copyright Skeleton */}
+        <div className="border-t border-gray-200 w-full py-6">
+          <div className="max-w-[1400px] mx-auto px-4 text-center">
+            <Skeleton className="h-4 w-64 mx-auto" />
+          </div>
+        </div>
       </footer>
     );
   }

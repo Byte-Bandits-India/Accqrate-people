@@ -1,3 +1,4 @@
+"use client";
 import React, { JSX } from "react";
 import {
   Accordion,
@@ -5,6 +6,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../components/ui/accordion";
+import { LoadingContext } from "../utils/LoadingContext";
+import { Skeleton } from "./ui/skeleton";
+import useInView from "../utils/useInView";
+import { useContext, useRef } from "react";
 
 interface FAQItem {
   question: string;
@@ -12,11 +17,14 @@ interface FAQItem {
 }
 
 export default function HRPayrollSection(): JSX.Element {
+  const { loading } = useContext(LoadingContext);
+  const heroRef = useRef<HTMLDivElement | null>(null);
+  const isVisible = useInView(heroRef);
   const faqItems: FAQItem[] = [
     {
       question: "How quickly can we deploy Accqrate People?",
       answer:
-        "Deployment depends on your organization’s size and requirements, but most clients get started within weeks.",
+        "Deployment depends on your organization's size and requirements, but most clients get started within weeks.",
     },
     {
       question: "Can Accqrate People integrate with other HR systems?",
@@ -30,6 +38,95 @@ export default function HRPayrollSection(): JSX.Element {
     },
   ];
 
+  if (loading || !isVisible) {
+    return (
+      <section ref={heroRef} className="w-full">
+        {/* Testimonials Section Skeleton */}
+        <div className="w-full max-w-[1280px] mx-auto font-inter px-6 md:px-8 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-12">
+            {/* Testimonial 1 Skeleton */}
+            <div className="border border-gray-200 rounded-lg p-6 lg:p-8 h-[280px] lg:h-[330px] flex flex-col">
+              <div className="space-y-3 flex-1">
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-4/5" />
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-3/4" />
+                <Skeleton className="h-4 w-5/6" />
+              </div>
+              <div className="flex items-center gap-4 mt-6">
+                <Skeleton className="w-12 h-12 lg:w-16 lg:h-16 rounded-full" />
+                <div className="space-y-2 flex-1">
+                  <Skeleton className="h-4 w-32" />
+                  <Skeleton className="h-3 w-24" />
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 Skeleton */}
+            <div className="border border-gray-200 rounded-lg p-6 lg:p-8 h-[280px] lg:h-[330px] flex flex-col">
+              <div className="space-y-3 flex-1">
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-4/5" />
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-3/4" />
+                <Skeleton className="h-4 w-5/6" />
+              </div>
+              <div className="flex items-center gap-4 mt-6">
+                <Skeleton className="w-12 h-12 lg:w-16 lg:h-16 rounded-full" />
+                <div className="space-y-2 flex-1">
+                  <Skeleton className="h-4 w-32" />
+                  <Skeleton className="h-3 w-24" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ Section Skeleton */}
+          <section className="md:m-10 my-8 md:py-10 lg:m-[60px] lg:py-[60px] grid gap-8 md:grid-cols-2 md:items-start">
+            <div className="self-center text-center md:text-left space-y-4">
+              <Skeleton className="h-8 w-64 mx-auto md:mx-0" />
+              <Skeleton className="h-8 w-48 mx-auto md:mx-0" />
+            </div>
+
+            <div className="space-y-6">
+              {[1, 2, 3].map((item) => (
+                <div key={item} className="space-y-4 border-b pb-6 last:border-b-0">
+                  <Skeleton className="h-6 w-full" />
+                  <Skeleton className="h-4 w-5/6" />
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+
+        {/* CTA Section Skeleton */}
+        <div className="bg-[#F2F2F2] w-full py-12 md:py-16">
+          <div className="max-w-[1280px] mx-auto px-6 md:px-8">
+            <div className="text-center space-y-4 mb-8">
+              <Skeleton className="h-8 w-80 mx-auto hidden md:block" />
+              <div className="md:hidden space-y-2">
+                <Skeleton className="h-7 w-64 mx-auto" />
+                <Skeleton className="h-7 w-56 mx-auto" />
+              </div>
+              <div className="space-y-3 max-w-2xl mx-auto">
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-11/12 mx-auto" />
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-4 w-full max-w-3xl mx-auto justify-center">
+              <Skeleton className="h-12 w-full md:w-40 lg:w-48" />
+              <Skeleton className="h-12 w-full md:w-40 lg:w-48" />
+              <Skeleton className="h-12 w-full md:w-40 lg:w-48" />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <>
       <section className="w-full max-w-[1280px] mx-auto font-inter px-6 md:px-8 py-8 flex flex-col items-center text-left">
@@ -38,9 +135,9 @@ export default function HRPayrollSection(): JSX.Element {
           {/* Testimonial 1 */}
           <div className="border bg-[#D9D9D9] md:bg-[#F9FFF9] border-green-600 shadow-[0_6px_4px_rgba(67,160,71,0.85)] rounded-lg p-4 lg:p-8 lg:h-[330px] flex flex-col">
             <p className="text-fluid-caption lg:text-[20px] mb-4">
-              “With Accqrate People, we’ve saved hours in payroll processing and
+              "With Accqrate People, we've saved hours in payroll processing and
               improved accuracy significantly. It's simplified HR for us, allowing us
-              to focus on what matters—our employees.”
+              to focus on what matters—our employees."
             </p>
             <div className="flex items-center gap-2 mt-auto pl-1">
               <img
@@ -58,9 +155,9 @@ export default function HRPayrollSection(): JSX.Element {
           {/* Testimonial 2 */}
           <div className="border bg-[#D9D9D9] md:bg-[#F9FFF9] border-green-600 shadow-[0_6px_4px_rgba(67,160,71,0.85)] rounded-lg p-4 lg:p-8 lg:h-[330px] flex flex-col">
             <p className="text-fluid-caption lg:text-[20px] mb-4">
-              “The automated compliance features ensure that we are always up to date
+              "The automated compliance features ensure that we are always up to date
               with local laws, and the performance management system has helped us
-              align team goals with the company’s objectives.”
+              align team goals with the company's objectives."
             </p>
             <div className="flex items-center gap-2 mt-auto pl-1">
               <img

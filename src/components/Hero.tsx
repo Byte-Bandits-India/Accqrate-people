@@ -3,8 +3,8 @@
 import Image from "next/image";
 import React, { useContext, useRef } from "react";
 import type { JSX } from "react";
-import { LoadingContext } from "../utils/LoadingContext";
-import Skeleton from "./skeleton";
+import { LoadingContext } from "../utils/LoadingContext"
+import { Skeleton } from "./ui/skeleton";
 import useInView from "../utils/useInView";
 import ButtonGroup from "../components/ui/ButtonGroup";
 
@@ -57,29 +57,38 @@ export default function Hero(): JSX.Element {
         ref={heroRef}
         className="w-full font-inter flex flex-col items-center justify-center text-center py-10 mt-10 px-4"
       >
-        {/* Heading skeletons */}
-        <Skeleton height="40px" width="60%" className="mb-6 mx-auto" />
-        <Skeleton height="28px" width="70%" className="mb-4 mx-auto" />
-        <Skeleton height="20px" width="80%" className="mb-4 mx-auto" />
+        <div className="w-full max-w-[1280px] mx-auto mt-[82px] md:mt-[90px] mb-[40px]">
+          {/* Heading skeletons */}
+          <div className="space-y-6 mb-8">
+            <Skeleton className="h-10 md:h-12 lg:h-14 w-3/4 mx-auto" />
+            <Skeleton className="h-6 md:h-8 lg:h-10 w-5/6 mx-auto" />
+            <Skeleton className="h-5 md:h-7 lg:h-9 w-11/12 mx-auto" />
+          </div>
 
-        <Skeleton height="22px" width="50%" className="mb-4 mt-4 mx-auto" />
-        <Skeleton height="22px" width="60%" className="mb-4 mx-auto" />
+          {/* Supporting text skeletons */}
+          <div className="space-y-4 mb-8">
+            <Skeleton className="h-4 md:h-5 w-3/5 mx-auto md:hidden" />
+            <Skeleton className="h-4 md:h-5 w-4/5 mx-auto md:hidden" />
+            <Skeleton className="h-5 md:h-6 w-full mx-auto hidden md:block" />
+          </div>
 
-        {/* Buttons skeleton */}
-        <div className="flex gap-4 mt-8">
-          <Skeleton height="50px" width="160px" className="rounded-full" />
-          <Skeleton height="50px" width="160px" className="rounded-full" />
+          {/* Buttons skeleton */}
+          <div className="flex gap-4 justify-center mb-12">
+            <Skeleton className="h-12 w-40 rounded-full" />
+            <Skeleton className="h-12 w-40 rounded-full" />
+          </div>
         </div>
 
         {/* Video skeleton */}
-        <Skeleton
-          height="400px"
-          width="100%"
-          className="mt-12 max-w-[1128px] rounded-xl"
-        />
+        <Skeleton className="w-full max-w-[1128px] h-64 md:h-80 lg:h-96 rounded-xl mb-12" />
 
         {/* Trusted text skeleton */}
-        <Skeleton height="24px" width="70%" className="mt-12 mx-auto mb-6" />
+        <div className="w-full max-w-[1280px] mx-auto mb-8">
+          <Skeleton className="h-6 md:h-8 lg:h-10 w-3/4 mx-auto" />
+        </div>
+
+        {/* Second video skeleton */}
+        <Skeleton className="w-full max-w-[1128px] h-64 md:h-80 lg:h-96 rounded-xl" />
       </section>
     );
   }
