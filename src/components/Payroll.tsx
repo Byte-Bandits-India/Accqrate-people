@@ -19,7 +19,7 @@ interface FAQItem {
 export default function HRPayrollSection(): JSX.Element {
   const { loading } = useContext(LoadingContext);
   const heroRef = useRef<HTMLDivElement | null>(null);
-  const isVisible = useInView(heroRef);
+  const isVisible = useInView(heroRef as React.RefObject<Element>);
   const faqItems: FAQItem[] = [
     {
       question: "How quickly can we deploy Accqrate People?",

@@ -64,9 +64,9 @@ export default function AutomationSection() {
   // context
   const { loading } = useContext(LoadingContext);
 
-  // ref + inView
-  const automationRef = useRef<HTMLDivElement | null>(null);
-  const isVisible = useInView(automationRef, { threshold: 0 });
+  // ref + inView - fix the type issue
+  const automationRef = useRef<HTMLDivElement>(null);
+  const isVisible = useInView(automationRef as React.RefObject<Element>, { threshold: 0 });
 
   // show skeleton if loading or not visible
   if (loading || !isVisible) {
@@ -149,18 +149,18 @@ export default function AutomationSection() {
                 key={sIdx}
                 className="bg-white md:p-6 flex flex-col rounded-[20px]"
               >
-                <h2 className="text-[#43A047] tracking--5 text-[20px] md:text-[24px] lg:text-[26px] font-medium leading-snug mb-6">
+                <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[26px] font-medium leading-snug mb-6">
                   {section.title}
                 </h2>
 
                 <Accordion
                   type="single"
                   collapsible
-                  className="w-full max-w-[400px]"
+                  className="w-full"
                 >
                   {section.items.map((item, index) => (
-                    <AccordionItem key={index} value={`${sIdx}-${index}`}>
-                      <AccordionTrigger className="text-[16px] font-semibold">
+                    <AccordionItem key={index} value={`item-${sIdx}-${index}`}>
+                      <AccordionTrigger className="text-[16px] font-semibold text-left">
                         {item.label}
                       </AccordionTrigger>
                       <AccordionContent className="text-[12px] md:text-[14px]">
@@ -180,8 +180,10 @@ export default function AutomationSection() {
               autoPlay
               muted
               loop
+              playsInline
             >
-              <source src="videos/Ai-driven_automation.mp4" type="video/mp4" />
+              <source src="/videos/Ai-driven_automation.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
             </video>
           </div>
         </div>
@@ -191,7 +193,7 @@ export default function AutomationSection() {
       <div className="mt-12 bg-[#F2F2F2] w-full py-6">
         <div className="max-w-[1280px] mx-auto px-[24px] md:px-[32px] font-inter">
           <h2 className="text-[26px] max-w-[250px] sm:max-w-[800px] mx-auto sm:text-[28px] md:text-[32px] lg:text-[38px] font-semibold mb-6 text-center leading-snug">
-            Accqrate <span className="text-[#43A047]"> People </span> : Why It
+            Accqrate <span className="text-[#43A047]">People</span>: Why It
             Works for You
           </h2>
 

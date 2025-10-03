@@ -11,7 +11,7 @@ import ButtonGroup from "../components/ui/ButtonGroup";
 export default function Hero(): JSX.Element {
   const { loading } = useContext(LoadingContext);
   const heroRef = useRef<HTMLDivElement | null>(null);
-  const isVisible = useInView(heroRef);
+  const isVisible = useInView(heroRef as React.RefObject<Element>);
 
   interface Industry {
     src: string;

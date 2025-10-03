@@ -21,7 +21,7 @@ interface DropdownItem {
 export default function Cloud() {
   const { loading } = useContext(LoadingContext);
   const receivableRef = useRef<HTMLDivElement | null>(null);
-  const isVisible = useInView(receivableRef, { threshold: 0 });
+  const isVisible = useInView(receivableRef as React.RefObject<Element>, { threshold: 0 });
 
   // Dropdown data arrays
   const receivableDropdowns: DropdownItem[] = [

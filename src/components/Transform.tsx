@@ -25,7 +25,7 @@ interface Logo {
 export default function Transform(): JSX.Element {
   const { loading } = useContext(LoadingContext);
   const onboardRef = useRef<HTMLDivElement | null>(null);
-  const isVisible = useInView(onboardRef);
+  const isVisible = useInView(onboardRef as React.RefObject<Element>);
 
   const topRow: Logo[] = [
     { src: "/images/1.png", name: "Education" },

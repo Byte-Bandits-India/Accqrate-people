@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useInView(ref, options = { threshold: 0.3 }) {
+export default function useInView(ref: React.RefObject<Element>, options = { threshold: 0.3 }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
