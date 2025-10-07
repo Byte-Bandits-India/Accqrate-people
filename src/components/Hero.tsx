@@ -164,7 +164,7 @@ export default function Hero(): JSX.Element {
           poster="/images/video-poster.jpg"
           className="w-full h-auto"
         >
-          <source src="/videos/Hero.mp4" type="video/mp4" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
       </FadeUp>
 
@@ -185,7 +185,7 @@ export default function Hero(): JSX.Element {
           poster="/images/video-poster.jpg"
           className="w-full h-auto"
         >
-          <source src="/videos/Hero.mp4" type="video/mp4" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
       </FadeUp>
     </section>
