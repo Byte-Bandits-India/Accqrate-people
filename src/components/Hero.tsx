@@ -7,6 +7,7 @@ import { LoadingContext } from "../utils/LoadingContext"
 import { Skeleton } from "./ui/skeleton";
 import useInView from "../utils/useInView";
 import ButtonGroup from "../components/ui/ButtonGroup";
+import FadeUp from "./ui/FadeUp";
 
 export default function Hero(): JSX.Element {
   const { loading } = useContext(LoadingContext);
@@ -154,7 +155,7 @@ export default function Hero(): JSX.Element {
       </div>
 
       {/* Dashboard Video */}
-      <div className="mb-[32px] md:mb-[40px] w-full max-w-[1128px] mx-auto rounded-xl overflow-hidden">
+      <FadeUp className="mb-[32px] md:mb-[40px] w-full max-w-[1128px] mx-auto rounded-xl overflow-hidden">
         <video
           autoPlay
           loop
@@ -165,17 +166,17 @@ export default function Hero(): JSX.Element {
         >
           <source src="/videos/Hero.mp4" type="video/mp4" />
         </video>
-      </div>
+      </FadeUp>
 
       {/* Trusted text */}
-      <div className="mb-8 w-full max-w-[1280px] mx-auto">
+      <FadeUp className="mb-8 w-full max-w-[1280px] mx-auto">
         <h3 className="text-[14px] md:text-[16px] lg:text-[30px]  font-semibold text-[#333333] text-center mx-auto">
           Join over 5,000 global companies who trust Accqrate People to manage
           their workforce with ease.
         </h3>
-      </div>
+      </FadeUp>
 
-      <div className="mb-[32px] md:mb-[40px] w-full max-w-[1128px] mx-auto rounded-xl overflow-hidden">
+      <FadeUp className="mb-[32px] md:mb-[40px] w-full max-w-[1128px] mx-auto rounded-xl overflow-hidden">
         <video
           autoPlay
           loop
@@ -186,7 +187,7 @@ export default function Hero(): JSX.Element {
         >
           <source src="/videos/Hero.mp4" type="video/mp4" />
         </video>
-      </div>
+      </FadeUp>
     </section>
   );
 }

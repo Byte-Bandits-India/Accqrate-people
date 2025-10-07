@@ -10,6 +10,7 @@ import { LoadingContext } from "../utils/LoadingContext";
 import { Skeleton } from "./ui/skeleton";
 import useInView from "../utils/useInView";
 import { useContext, useRef } from "react";
+import FadeUp from "./ui/FadeUp";
 
 interface FAQItem {
   question: string;
@@ -133,7 +134,7 @@ export default function HRPayrollSection(): JSX.Element {
         {/* Testimonials */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {/* Testimonial 1 */}
-          <div className="border bg-[#D9D9D9] md:bg-[#F9FFF9] border-green-600 shadow-[0_6px_4px_rgba(67,160,71,0.85)] rounded-lg p-4 lg:p-8 lg:h-[330px] flex flex-col">
+          <FadeUp className="border bg-[#D9D9D9] md:bg-[#F9FFF9] border-green-600 shadow-[0_6px_4px_rgba(67,160,71,0.85)] rounded-lg p-4 lg:p-8 lg:h-[330px] flex flex-col">
             <p className="text-fluid-caption lg:text-[20px] mb-4">
               "With Accqrate People, we've saved hours in payroll processing and
               improved accuracy significantly. It's simplified HR for us, allowing us
@@ -150,10 +151,10 @@ export default function HRPayrollSection(): JSX.Element {
                 <p className="text-xs text-green-600">FMCG, Riyadh</p>
               </div>
             </div>
-          </div>
+          </FadeUp>
 
           {/* Testimonial 2 */}
-          <div className="border bg-[#D9D9D9] md:bg-[#F9FFF9] border-green-600 shadow-[0_6px_4px_rgba(67,160,71,0.85)] rounded-lg p-4 lg:p-8 lg:h-[330px] flex flex-col">
+          <FadeUp className="border bg-[#D9D9D9] md:bg-[#F9FFF9] border-green-600 shadow-[0_6px_4px_rgba(67,160,71,0.85)] rounded-lg p-4 lg:p-8 lg:h-[330px] flex flex-col">
             <p className="text-fluid-caption lg:text-[20px] mb-4">
               "The automated compliance features ensure that we are always up to date
               with local laws, and the performance management system has helped us
@@ -170,21 +171,21 @@ export default function HRPayrollSection(): JSX.Element {
                 <p className="text-xs text-green-600">FMCG, Riyadh</p>
               </div>
             </div>
-          </div>
+          </FadeUp>
         </div>
 
         {/* FAQ */}
         <section className="md:m-10 my-8 md:py-10 lg:m-[60px] lg:py-[60px] max-w-[1280px] mx-auto grid gap-6 md:grid-cols-2 md:items-start">
-          <div className="self-center text-center md:text-left">
+          <FadeUp className="self-center text-center md:text-left">
             <h2 className="text-fluid-h2 lg:text-[48px] font-semibold tracking--5">
               Any Questions?
             </h2>
             <h3 className="text-green-600 md:text-[#333333] lg:text-[48px] text-fluid-h2 font-bold tracking--5">
               We Got You !!!
             </h3>
-          </div>
+          </FadeUp>
 
-          <div>
+          <FadeUp>
             <Accordion type="single" collapsible className="w-full text-left">
               {faqItems.map((item, index) => (
                 <AccordionItem
@@ -201,29 +202,31 @@ export default function HRPayrollSection(): JSX.Element {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
+          </FadeUp>
         </section>
       </section>
 
       {/* CTA Section */}
       <div className="bg-[#F2F2F2] w-full py-6 md:py-8">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 ">
-          <h3 className="text-green-600 font-semibold tracking--5 text-center text-fluid-h2 md:hidden">
-            Transform Your HR & Payroll
-          </h3>
-          <p className="text-gray-700 text-fluid-h2 tracking--5 text-center font-semibold mb-6 md:hidden">
-            Today with Accqrate People
-          </p>
-          <h3 className="text-[#333333] text-center font-medium tracking--5 lg:text-[38px] text-fluid-h2 hidden md:block">
-            Transform Your HR & Payroll Today with Accqrate People
-          </h3>
-          <p className="text-gray-600 text-fluid-caption lg:text-[20px] mb-8 text-center">
-            Your HR and payroll systems should work for you, not the other way
-            around. <br className="hidden md:block" /> Discover the seamless,
-            intuitive solution trusted by businesses worldwide.
-          </p>
+          <FadeUp>
+            <h3 className="text-green-600 font-semibold tracking--5 text-center text-fluid-h2 md:hidden">
+              Transform Your HR & Payroll
+            </h3>
+            <p className="text-gray-700 text-fluid-h2 tracking--5 text-center font-semibold mb-6 md:hidden">
+              Today with Accqrate People
+            </p>
+            <h3 className="text-[#333333] text-center font-medium tracking--5 lg:text-[38px] text-fluid-h2 hidden md:block">
+              Transform Your HR & Payroll Today with Accqrate People
+            </h3>
+            <p className="text-gray-600 text-fluid-caption lg:text-[20px] mb-8 text-center">
+              Your HR and payroll systems should work for you, not the other way
+              around. <br className="hidden md:block" /> Discover the seamless,
+              intuitive solution trusted by businesses worldwide.
+            </p>
+          </FadeUp>
 
-          <div className="flex flex-col md:flex-row gap-3 px-8 w-full max-w-[1280px] mx-auto md:justify-center">
+          <FadeUp className="flex flex-col md:flex-row gap-3 px-8 w-full max-w-[1280px] mx-auto md:justify-center">
             <button className="bg-[#4CAF50] text-white py-3 px-4 rounded-md w-full md:w-[300px] md:h-[58px]">
               REQUEST A DEMO
             </button>
@@ -233,7 +236,7 @@ export default function HRPayrollSection(): JSX.Element {
             <button className="bg-[#4CAF50] text-white py-3 px-4 rounded-md w-full md:w-[300px] md:h-[58px]">
               LEARN MORE
             </button>
-          </div>
+          </FadeUp>
         </div>
       </div>
     </>

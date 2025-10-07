@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
   AccordionCard,
 } from "../components/ui/accordion";
+import FadeUp from "./ui/FadeUp";
 
 // Type for dropdown items
 interface DropdownItem {
@@ -157,18 +158,20 @@ export default function Cloud() {
     <>
       <section className="mx-auto font-inter max-w-[1280px]">
         <div className="mt-[32px]">
-          {/* Top Feature Cards */}
-          <h2 className="text-[24px] max-w-[340px] lg:text-[38px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking-[-0.05em] md:text-fluid-h2 font-medium text-center mb-6">
-            <span className="text-[#43A047]"> Cloud or On-Premises?</span> The Choice is Yours
-          </h2>
-          <p className="text-fluid-h3 font-semibold px-[24px] mx-auto text-center mb-6">
-            Fast, Flexible, and Secure Deployment Options
-          </p>
-          <p className="text-center px-[24px] text-gray-700 tracking-[-0.02em] text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6">
-            With Accqrate People, you're in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible
-          </p>
+          <FadeUp>
+            {/* Top Feature Cards */}
+            <h2 className="text-[24px] max-w-[340px] lg:text-[38px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking-[-0.05em] md:text-fluid-h2 font-medium text-center mb-6">
+              <span className="text-[#43A047]"> Cloud or On-Premises?</span> The Choice is Yours
+            </h2>
+            <p className="text-fluid-h3 font-semibold px-[24px] mx-auto text-center mb-6">
+              Fast, Flexible, and Secure Deployment Options
+            </p>
+            <p className="text-center px-[24px] text-gray-700 tracking-[-0.02em] text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6">
+              With Accqrate People, you're in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible
+            </p>
+          </FadeUp>
 
-          <div className="max-w-[1000px] mx-auto px-[24px] md:px-[32px] rounded-[40px] mb-[48px] md:mb-[56px]">
+          <FadeUp className="max-w-[1000px] mx-auto px-[24px] md:px-[32px] rounded-[40px] mb-[48px] md:mb-[56px]">
             <Accordion type="single" collapsible className="flex flex-col md:flex-row gap-4 w-[100%] mx-auto">
               <AccordionCard
                 value="card-4"
@@ -183,18 +186,20 @@ export default function Cloud() {
                 content={<>Extra details about on-premises deployment will be shown here.</>}
               />
             </Accordion>
-          </div>
+          </FadeUp>
 
           {/* Bottom Sections */}
-          <h2 className="text-[24px] max-w-[340px] sm:max-w-[1280px] lg:text-[38px] mx-auto px-[24px] mt-[48px] leading-tight tracking-[-0.05em] md:text-fluid-h2 font-medium text-center mb-6">
-            Manage Every <span className="text-[#43A047]">Employee Lifecycle</span> in One Platform
-          </h2>
-          <p className="text-fluid-caption px-[24px] lg:text-[20px] mx-auto text-center">
-            Streamlined HR, Payroll and Compliance
-          </p>
+          <FadeUp>
+            <h2 className="text-[24px] max-w-[340px] sm:max-w-[1280px] lg:text-[38px] mx-auto px-[24px] mt-[48px] leading-tight tracking-[-0.05em] md:text-fluid-h2 font-medium text-center mb-6">
+              Manage Every <span className="text-[#43A047]">Employee Lifecycle</span> in One Platform
+            </h2>
+            <p className="text-fluid-caption px-[24px] lg:text-[20px] mx-auto text-center">
+              Streamlined HR, Payroll and Compliance
+            </p>
+          </FadeUp>
 
           {/* ================= Account Receivables ================= */}
-          <section className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
+          <FadeUp className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
             <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
               <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking-[-0.05em] leading-tight pb-6">
                 Simplify Recruitment and Onboarding
@@ -223,7 +228,7 @@ export default function Cloud() {
                 <source src="videos/account-receivables.mp4" type="video/mp4" />
               </video>
             </div>
-          </section>
+          </FadeUp>
         </div>
       </section>
 
@@ -231,7 +236,7 @@ export default function Cloud() {
       <section className="md:bg-[#F2FFF3]">
         <div className="max-w-[1280px] mx-auto">
           {/* Account Payables */}
-          <section className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
+          <FadeUp className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
             <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
               <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking-[-0.05em] leading-tight pb-6">
                 Effortless Payroll & Compliance
@@ -260,7 +265,7 @@ export default function Cloud() {
                 <source src="videos/Accounts_payables.mp4" type="video/mp4" />
               </video>
             </div>
-          </section>
+          </FadeUp>
 
           <div className="bg-[#F2FFF3] py-6 md:py-0">
             {/* Smart Expense Management */}
@@ -298,7 +303,7 @@ export default function Cloud() {
             </section>
 
             {/* Financial Statements */}
-            <section className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
+            <FadeUp className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
               <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
                 <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking-[-0.05em] leading-tight pb-6">
                   Termination and Offboarding Made Simple
@@ -327,7 +332,7 @@ export default function Cloud() {
                   <source src="videos/Financial_statements.mp4" type="video/mp4" />
                 </video>
               </div>
-            </section>
+            </FadeUp>
           </div>
         </div>
       </section>

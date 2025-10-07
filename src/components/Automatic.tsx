@@ -10,6 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../components/ui/accordion";
+import FadeUp from "./ui/FadeUp";
 
 // Section + item types
 type SectionItem = {
@@ -138,7 +139,7 @@ export default function AutomationSection() {
   return (
     <>
       <div className="mt-[24px] md:mt-8 lg:mt-10 px-[24px] md:px-[32px] max-w-[1280px] mx-auto font-inter">
-        <div className="md:bg-[#E3E3E3] md:p-[32px] rounded-[20px]">
+        <FadeUp className="md:bg-[#E3E3E3] md:p-[32px] rounded-[20px]">
           {/* ================= Two Sections with Accordion ================= */}
           <div
             ref={automationRef}
@@ -186,18 +187,20 @@ export default function AutomationSection() {
               Your browser does not support the video tag.
             </video>
           </div>
-        </div>
+        </FadeUp>
       </div>
 
       {/* Why it works section */}
       <div className="mt-12 bg-[#F2F2F2] w-full py-6">
         <div className="max-w-[1280px] mx-auto px-[24px] md:px-[32px] font-inter">
-          <h2 className="text-[26px] max-w-[250px] sm:max-w-[800px] mx-auto sm:text-[28px] md:text-[32px] lg:text-[38px] font-semibold mb-6 text-center leading-snug">
-            Accqrate <span className="text-[#43A047]">People</span>: Why It
-            Works for You
-          </h2>
+          <FadeUp>
+            <h2 className="text-[26px] max-w-[250px] sm:max-w-[800px] mx-auto sm:text-[28px] md:text-[32px] lg:text-[38px] font-semibold mb-6 text-center leading-snug">
+              Accqrate <span className="text-[#43A047]">People</span>: Why It
+              Works for You
+            </h2>
+          </FadeUp>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
+          <FadeUp className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
             {/* Image */}
             <div className="flex items-center justify-center">
               <img
@@ -226,10 +229,10 @@ export default function AutomationSection() {
                 HR data is secure and ready to scale as your business grows.
               </li>
             </ul>
-          </div>
+          </FadeUp>
 
           {/* Buttons */}
-          <div className="hidden md:block mt-[32px]">
+          <FadeUp className="hidden md:block mt-[32px]">
             <div className="flex flex-col md:flex-row gap-3 px-8 w-full max-w-[1280px] mx-auto md:justify-center">
               <button className="bg-[#4CAF50] text-white py-3 px-4 rounded-md w-full md:w-[305px] md:h-[58px]">
                 REQUEST A DEMO
@@ -241,7 +244,7 @@ export default function AutomationSection() {
                 LEARN MORE
               </button>
             </div>
-          </div>
+          </FadeUp>
         </div>
       </div>
     </>

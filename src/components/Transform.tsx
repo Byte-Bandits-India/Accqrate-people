@@ -5,18 +5,10 @@ import type { JSX } from "react";
 import { LoadingContext } from "../utils/LoadingContext";
 import Skeleton from "./ui/skeleton";
 import useInView from "../utils/useInView";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-  // Remove AccordionCard if not actually defined in your UI lib
-  AccordionCard,
-} from "../components/ui/accordion";
 import FeatureCard from "./ui/FeatureCard";
 import Image from "next/image";
+import FadeUp from "./ui/FadeUp";
 
-// ✅ Define the logo type
 interface Logo {
   src: string;
   name: string;
@@ -94,18 +86,20 @@ export default function Transform(): JSX.Element {
     <>
       <div className="px-[24px] md:px-[32px] max-w-[1280px] mx-auto font-inter">
         {/* Heading */}
-        <h2 className="max-w-[340px] mx-auto sm:max-w-[800px] text-[24px] md:text-[32px] lg:text-[38px] font-inter text-[#000000] text-center mb-6">
-          Transform Your <span className="text-[#43A047]">HR and Payroll</span>{" "}
-          Today
-        </h2>
+        <FadeUp>
+          <h2 className="max-w-[340px] mx-auto sm:max-w-[800px] text-[24px] md:text-[32px] lg:text-[38px] font-inter text-[#000000] text-center mb-6">
+            Transform Your <span className="text-[#43A047]">HR and Payroll</span>{" "}
+            Today
+          </h2>
 
-        {/* Description */}
-        <p className="mb-6 text-[#000000B2] lg:text-fluid-body text-[14px] md:text-[16px] text-center">
-          Accqrate People brings your HR & Payroll processes together in one
-          unified platform. Forget <br className="hidden md:block" /> endless
-          spreadsheets, outdated systems, and manual errors. Accqrate People is
-          designed to <br className="hidden md:block" /> automate and simplify:
-        </p>
+          {/* Description */}
+          <p className="mb-6 text-[#000000B2] lg:text-fluid-body text-[14px] md:text-[16px] text-center">
+            Accqrate People brings your HR & Payroll processes together in one
+            unified platform. Forget <br className="hidden md:block" /> endless
+            spreadsheets, outdated systems, and manual errors. Accqrate People is
+            designed to <br className="hidden md:block" /> automate and simplify:
+          </p>
+        </FadeUp>
 
         {/* Feature cards */}
         <div className="flex flex-col md:flex-row justify-center mx-auto gap-6 items-center lg:gap-16 mb-[48px] md:mb-[56px]">
@@ -130,13 +124,13 @@ export default function Transform(): JSX.Element {
       </div>
 
       {/* Logo Marquee */}
-      <h1 className="text-[24px] max-w-[340px] md:max-w-full leading-tight mx-auto mt-[48px] tracking--5 md:text-fluid-h2 lg:text-[38px] font-semibold text-center mb-4 px-[24px]">
+      <FadeUp className="text-[24px] max-w-[340px] md:max-w-full leading-tight mx-auto mt-[48px] tracking--5 md:text-fluid-h2 lg:text-[38px] font-semibold text-center mb-4 px-[24px]">
         Trusted by{" "}
         <span className="text-[#43A047] md:whitespace-nowrap">
           Global Leaders
         </span>{" "}
         Across Industries
-      </h1>
+      </FadeUp>
 
       <div className="w-screen relative mb-[48px] md:mb-[56px]">
         <div className="max-w-5xl overflow-hidden py-6 mx-auto">
