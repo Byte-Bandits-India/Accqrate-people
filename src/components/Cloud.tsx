@@ -163,11 +163,11 @@ export default function Cloud() {
             <h2 className="text-[24px] max-w-[340px] lg:text-[38px] sm:max-w-[800px] mx-auto px-[24px] mt-[48px] leading-tight tracking-[-0.05em] md:text-fluid-h2 font-medium text-center mb-6">
               <span className="text-[#43A047]"> Cloud or On-Premises?</span> The Choice is Yours
             </h2>
-            <p className="text-fluid-h3 font-semibold px-[24px] mx-auto text-center mb-6">
+            <p className="text-fluid-body font-medium px-[24px] tracking-para mx-auto text-center mb-6">
               Fast, Flexible, and Secure Deployment Options
             </p>
-            <p className="text-center px-[24px] text-gray-700 tracking-[-0.02em] text-[14px] md:text-fluid-body max-w-5xl mx-auto pb-6">
-              With Accqrate People, you're in control. Whether you choose to deploy in the cloud or on-premises, your HR data is secure and always accessible
+            <p className="text-center px-[24px] text-gray-700 tracking-para text-fluid-small max-w-5xl mx-auto pb-6">
+              With Accqrate People, you're in control. Whether you choose to deploy in <br className="hidden lg:block" /> the cloud or on-premises, your HR data is secure and always accessible
             </p>
           </FadeUp>
 
@@ -190,10 +190,10 @@ export default function Cloud() {
 
           {/* Bottom Sections */}
           <FadeUp>
-            <h2 className="text-[24px] max-w-[340px] sm:max-w-[1280px] lg:text-[38px] mx-auto px-[24px] mt-[48px] leading-tight tracking-[-0.05em] md:text-fluid-h2 font-medium text-center mb-6">
+            <h2 className="text-fluid-h2 max-w-[340px] sm:max-w-[1280px] mx-auto px-[24px] mt-[48px] leading-tight tracking-heading  font-medium text-center mb-6">
               Manage Every <span className="text-[#43A047]">Employee Lifecycle</span> in One Platform
             </h2>
-            <p className="text-fluid-caption px-[24px] lg:text-[20px] mx-auto text-center">
+            <p className="text-fluid-small px-[24px] font-semibold mx-auto text-center">
               Streamlined HR, Payroll and Compliance
             </p>
           </FadeUp>
@@ -201,7 +201,7 @@ export default function Cloud() {
           {/* ================= Account Receivables ================= */}
           <FadeUp className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
             <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
-              <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking-[-0.05em] leading-tight pb-6">
+              <h2 className="text-[#43A047] text-fluid-h3 font-medium tracking-[-0.05em] leading-tight pb-6">
                 Simplify Recruitment and Onboarding
               </h2>
               <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">
@@ -238,7 +238,7 @@ export default function Cloud() {
           {/* Account Payables */}
           <FadeUp className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
             <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
-              <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking-[-0.05em] leading-tight pb-6">
+              <h2 className="text-[#43A047] text-fluid-h3 font-medium tracking-heading leading-tight pb-6">
                 Effortless Payroll & Compliance
               </h2>
               <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">
@@ -272,7 +272,7 @@ export default function Cloud() {
             <section className="my-6 mx-6 md:m-[32px]">
               <div className="rounded-xl md:rounded-2xl mx-auto md:flex md:bg-white md:p-[32px] md:shadow-[9px_7px_16.9px_rgba(67,160,71,0.2)]">
                 <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
-                  <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking-[-0.05em] leading-tight pb-6">
+                  <h2 className="text-[#43A047] text-fluid-h3 font-medium tracking-heading leading-tight pb-6">
                     Track Absences and Manage Leave with Ease
                   </h2>
                   <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">
@@ -305,7 +305,7 @@ export default function Cloud() {
             {/* Financial Statements */}
             <FadeUp className="py-6 px-6 md:p-[32px] rounded-xl md:rounded-2xl mx-auto md:flex">
               <div className="flex-1 md:max-w-[400px] lg:max-w-[520px]">
-                <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[40px] tracking-[-0.05em] leading-tight pb-6">
+                <h2 className="text-[#43A047] text-fluid-h3 font-medium tracking-heading leading-tight pb-6">
                   Termination and Offboarding Made Simple
                 </h2>
                 <Accordion type="single" collapsible className="w-full max-w-[400px] md:mt-6 lg:mt-10">

@@ -102,30 +102,25 @@ export default function Hero(): JSX.Element {
     >
       <div className="w-full max-w-[1280px] mx-auto mt-[82px] md:mt-[90px] mb-[40px]">
         {/* Headings */}
-        <h1 className="tracking--5 text-fluid-h1 font-semibold text-[#333333] mb-[24px]">
+        <h1 className="tracking-heading text-fluid-h1 font-semibold text-[#333333] mb-[24px]">
           Accqrate <span className="text-[#43A047]">People</span>
         </h1>
         <div className=" max-w-[340px] md:max-w-[800px] mx-auto">
-          <h2 className="text-[20px] tracking--5 md:text-[24px] lg:text-[38px] font-light text-[#333333] tracking-wide mb-[24px]">
+          <h2 className="text-fluid-h3 tracking-heading  font-light text-[#333333] mb-[24px]">
             The Only{" "}
             <span className="text-[#43A047] font-medium md:font-medium ">
               HR & Payroll Solution
             </span>{" "}
             You'll Ever Need
           </h2>
-          <p className="text-fluid-caption max-w-[250px] mx-auto sm:max-w-[900px] md:text-[18px] lg:text-[26px] tracking-tight md:font-semibold md:leading-10 mb-[16px] md:mb-[24px] text-[#333333]">
-            Effortlessly Manage Your Workforce, Payroll,
-            <br className="hidden md:block" /> and Compliance
+          <p className="text-fluid-small md:text-fluid-body  mx-auto sm:max-w-[900px] md:text-[18px] lg:text-[26px] tracking-tight font-medium md:leading-10 mb-[16px] md:mb-[24px] text-[#333333]">
+            Effortlessly Manage Your Workforce,
+            <br className="block" />
+            Payroll, and Compliance
           </p>
 
           {/* Supporting text */}
-          <p className="text-[#737373] text-fluid-small md:hidden">
-            Whether you're scaling, managing a growing team, or optimizing HR
-            operations, Accqrate People is built to simplify every aspect of HR
-            from recruitment to retirement on a single, secure platform.
-          </p>
-
-          <p className="text-[#737373] text-[20px] hidden md:block">
+          <p className="text-[#737373] text-fluid-small md:text-fluid-body">
             Whether you're scaling, managing a growing team, or optimizing HR
             operations, Accqrate People is built to simplify every aspect of HR
             from recruitment to retirement on a single, secure platform.
@@ -170,7 +165,7 @@ export default function Hero(): JSX.Element {
 
       {/* Trusted text */}
       <FadeUp className="mb-8 w-full max-w-[1280px] mx-auto">
-        <h3 className="text-[14px] md:text-[16px] lg:text-[30px]  font-semibold text-[#333333] text-center mx-auto">
+        <h3 className="text-fluid-small md:text-fluid-body font-semibold text-[#333333] text-center mx-auto">
           Join over 5,000 global companies who trust Accqrate People to manage
           their workforce with ease.
         </h3>

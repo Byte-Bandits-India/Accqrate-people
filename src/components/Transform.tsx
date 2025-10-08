@@ -87,13 +87,13 @@ export default function Transform(): JSX.Element {
       <div className="px-[24px] md:px-[32px] max-w-[1280px] mx-auto font-inter">
         {/* Heading */}
         <FadeUp>
-          <h2 className="max-w-[340px] mx-auto sm:max-w-[800px] text-[24px] md:text-[32px] lg:text-[38px] font-inter text-[#000000] text-center mb-6">
+          <h2 className="max-w-[340px] mx-auto sm:max-w-[800px] font-medium text-fluid-h2 font-inter text-[#000000] tracking-heading text-center mb-6">
             Transform Your <span className="text-[#43A047]">HR and Payroll</span>{" "}
             Today
           </h2>
 
           {/* Description */}
-          <p className="mb-6 text-[#000000B2] lg:text-fluid-body text-[14px] md:text-[16px] text-center">
+          <p className="pb-6 text-[#000000B2] lg:text-fluid-body tracking-para text-fluid-small text-center">
             Accqrate People brings your HR & Payroll processes together in one
             unified platform. Forget <br className="hidden md:block" /> endless
             spreadsheets, outdated systems, and manual errors. Accqrate People is
@@ -102,7 +102,7 @@ export default function Transform(): JSX.Element {
         </FadeUp>
 
         {/* Feature cards */}
-        <div className="flex flex-col md:flex-row justify-center mx-auto gap-6 items-center lg:gap-16 mb-[48px] md:mb-[56px]">
+        <div className="flex flex-col md:flex-row justify-center mx-auto gap-4 items-center lg:gap-10 mb-[48px] md:mb-[56px]">
           <FeatureCard
             videoSrc="videos/cloud-first.mp4"
             title="Payroll"
@@ -124,7 +124,7 @@ export default function Transform(): JSX.Element {
       </div>
 
       {/* Logo Marquee */}
-      <FadeUp className="text-[24px] max-w-[340px] md:max-w-full leading-tight mx-auto mt-[48px] tracking--5 md:text-fluid-h2 lg:text-[38px] font-semibold text-center mb-4 px-[24px]">
+      <FadeUp className="text-fluid-h2 max-w-[340px] md:max-w-full leading-tight mx-auto mt-[48px] tracking-heading md:text-fluid-h2 lg:text-[38px] font-medium text-center mb-4 px-[24px]">
         Trusted by{" "}
         <span className="text-[#43A047] md:whitespace-nowrap">
           Global Leaders

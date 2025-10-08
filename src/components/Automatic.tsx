@@ -150,7 +150,7 @@ export default function AutomationSection() {
                 key={sIdx}
                 className="bg-white md:p-6 flex flex-col rounded-[20px]"
               >
-                <h2 className="text-[#43A047] text-[20px] md:text-[24px] lg:text-[26px] font-medium leading-snug mb-6">
+                <h2 className="text-[#43A047] text-fluid-h3 font-medium leading-snug mb-6">
                   {section.title}
                 </h2>
 
@@ -194,7 +194,7 @@ export default function AutomationSection() {
       <div className="mt-12 bg-[#F2F2F2] w-full py-6">
         <div className="max-w-[1280px] mx-auto px-[24px] md:px-[32px] font-inter">
           <FadeUp>
-            <h2 className="text-[26px] max-w-[250px] sm:max-w-[800px] mx-auto sm:text-[28px] md:text-[32px] lg:text-[38px] font-semibold mb-6 text-center leading-snug">
+            <h2 className="text-[26px] sm:max-w-[800px] mx-auto sm:text-[28px] md:text-[32px] tracking-heading lg:text-[38px] font-medium mb-6 text-center leading-snug">
               Accqrate <span className="text-[#43A047]">People</span>: Why It
               Works for You
             </h2>
@@ -211,7 +211,7 @@ export default function AutomationSection() {
             </div>
 
             {/* Text List */}
-            <ul className="text-left px-[24px] list-disc list-inside text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-6 space-y-4 md:space-y-8">
+            <ul className="text-left px-[24px] list-disc list-inside text-fluid-small tracking-para leading-6 space-y-4 md:space-y-8">
               <li>
                 Automation-First: Streamline your processes from hiring to
                 payroll to performance reviews.
