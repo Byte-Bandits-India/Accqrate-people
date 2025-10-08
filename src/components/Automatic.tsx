@@ -31,15 +31,15 @@ export default function AutomationSection() {
       items: [
         {
           label: "Organization & Goal Setting",
-          content: "Define and track organizational goals aligned with strategy.",
+          content: "Align employee performance with organizational goals to drive productivity and growth. ",
         },
         {
           label: "Appraisal Reviews",
-          content: "Conduct structured reviews to evaluate employee performance.",
+          content: "Track and manage appraisals with integrated goal assignment and progress tracking. ",
         },
         {
           label: "Continuous Feedback",
-          content: "Provide real-time feedback to employees for continuous improvement.",
+          content: "Enable a feedback-rich environment for continuous performance improvement. ",
         },
       ],
     },
@@ -48,15 +48,15 @@ export default function AutomationSection() {
       items: [
         {
           label: "Onboard your employees",
-          content: "Easily onboard new hires with a seamless digital workflow.",
+          content: "All employees get access to the ESS on successful onboarding completion ",
         },
         {
           label: "Centralized Portal",
-          content: "Give employees access to all their HR information in one place.",
+          content: "Centralized employee actions including absences, expenses, loads, workflows, documents and so on",
         },
         {
           label: "Workflow",
-          content: "Automate approval workflows for leave, claims, and other requests.",
+          content: "Notifications for expiry of legal documents, payslips, loss of pay etc.",
         },
       ],
     },

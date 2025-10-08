@@ -102,7 +102,7 @@ export default function Hero(): JSX.Element {
     >
       <div className="w-full max-w-[1280px] mx-auto mt-[82px] md:mt-[90px] mb-[40px]">
         {/* Headings */}
-        <h1 className="tracking-heading text-fluid-h1 font-semibold text-[#333333] mb-[24px]">
+        <h1 className="tracking-heading text-fluid-h1 font-medium text-[#333333] mb-[24px]">
           Accqrate <span className="text-[#43A047]">People</span>
         </h1>
         <div className=" max-w-[340px] md:max-w-[800px] mx-auto">
@@ -113,7 +113,7 @@ export default function Hero(): JSX.Element {
             </span>{" "}
             You'll Ever Need
           </h2>
-          <p className="text-fluid-small md:text-fluid-body  mx-auto sm:max-w-[900px] md:text-[18px] lg:text-[26px] tracking-tight font-medium md:leading-10 mb-[16px] md:mb-[24px] text-[#333333]">
+          <p className="text-fluid-small md:text-fluid-body  mx-auto sm:max-w-[900px] md:text-[18px] lg:text-[26px] tracking-tight font-medium mb-[16px] md:mb-[24px] text-[#333333]">
             Effortlessly Manage Your Workforce,
             <br className="block" />
             Payroll, and Compliance

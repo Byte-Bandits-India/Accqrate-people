@@ -26,27 +26,27 @@ export default function Cloud() {
 
   // Dropdown data arrays
   const receivableDropdowns: DropdownItem[] = [
-    { title: "Company CV Format", content: "Sample content for Company CV Format." },
-    { title: "Onboarding Link", content: "Sample content for Onboarding." },
-    { title: "Job Postings & Evaluation", content: "Sample content for Job Postings & Evaluations." },
+    { title: "Company CV Format", content: "Standardize CVs for easy review and evaluation" },
+    { title: "Onboarding Link", content: "Seamless new hire onboarding—automate documentation, contracts, and initial setup. " },
+    { title: "Job Postings & Evaluation", content: "Post open positions, evaluate candidates, and hire seamlessly. Automatic posting of job in social medias. " },
   ];
 
   const payableDropdowns: DropdownItem[] = [
-    { title: "Automated Payroll Setup", content: "Sample content for Automated Payroll Setup." },
-    { title: "Custom Payroll Components", content: "Sample content for Custom Payroll Components." },
-    { title: "Statutory & Loan Clearance", content: "Sample content for Statutory & Loan Clearance." },
+    { title: "Automated Payroll Setup", content: "Set payroll rules once, then let Accqrate People generate accurate payslips without the headaches. " },
+    { title: "Custom Payroll Components", content: "Tailor your payroll structure by department, role, or grade. " },
+    { title: "Statutory & Loan Clearance", content: "Automatically manage loan deductions and statutory compliance. " },
   ];
 
   const expenseDropdowns: DropdownItem[] = [
-    { title: "Company Calendar & Leave Balances", content: "Sample content for Company Calendar & Leave Balances." },
-    { title: "Leave Request Automation", content: "Sample content for Leave Request Automation." },
-    { title: "Comprehensive Leave Reporting", content: "Sample content for Comprehensive Leave Reporting." },
+    { title: "Company Calendar & Leave Balances", content: "Manage employee leave requests, approvals, and balances from a single calendar. " },
+    { title: "Leave Request Automation", content: "Employees apply for leave; managers approve seamlessly. " },
+    { title: "Comprehensive Leave Reporting", content: "Track and report leave data with detailed analytics for HR. " },
   ];
 
   const financialDropdowns: DropdownItem[] = [
-    { title: "Termination Checklists", content: "Sample content for Termination Checklists." },
-    { title: "Complete Data & Asset Retrieval", content: "Sample content for Complete Data & Asset Retrieval." },
-    { title: "Exit interviews & Documentation", content: "Sample content for Exit interviews & Documentation." },
+    { title: "Termination Checklists", content: "Automate offboarding processes with predefined checklists. " },
+    { title: "Complete Data & Asset Retrieval", content: "Ensure all assets are returned and all final payments are processed smoothly. " },
+    { title: "Exit interviews & Documentation", content: "Capture feedback and complete necessary documentation. " },
   ];
 
   // Show skeleton while loading or not in view
@@ -177,13 +177,13 @@ export default function Cloud() {
                 value="card-4"
                 icon="/images/instant.png"
                 title="Cloud Deployment"
-                content={<>This is where extra details about cloud deployment go.</>}
+                content={<>Cloud Deployment Accessible 24/7, anywhere, on any device. No hardware or IT resources needed. </>}
               />
               <AccordionCard
                 value="card-5"
                 icon="/images/invoice.png"
                 title="On-Premises"
-                content={<>Extra details about on-premises deployment will be shown here.</>}
+                content={<>Full control of your infrastructure, installed in under 2 hours with minimal downtime. </>}
               />
             </Accordion>
           </FadeUp>

@@ -25,17 +25,17 @@ export default function HRPayrollSection(): JSX.Element {
     {
       question: "How quickly can we deploy Accqrate People?",
       answer:
-        "Deployment depends on your organization's size and requirements, but most clients get started within weeks.",
+        "Deploying Accqrate People is simple. For cloud deployment, you’re up and running in under an hour. On-premises takes just a couple of hours, with full control and customization. ",
     },
     {
       question: "Can Accqrate People integrate with other HR systems?",
       answer:
-        "Yes, Accqrate People integrates seamlessly with a wide range of HR and payroll systems.",
+        "Yes, Accqrate People integrates seamlessly with most HR software, ERPs, and third-party applications, ensuring smooth data flow and synchronization. ",
     },
     {
       question: "Is my data secure with Accqrate People?",
       answer:
-        "Absolutely. Data security is a top priority, with enterprise-grade encryption and compliance standards.",
+        "Absolutely. We use bank-level encryption, multi-factor authentication, and daily backups to ensure your data remains secure and accessible. ",
     },
   ];
 
